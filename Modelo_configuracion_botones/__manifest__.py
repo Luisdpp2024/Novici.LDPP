@@ -1,10 +1,10 @@
 {
     'name': 'Config Novici Module',
     'version': '1.0',
-    'summary': 'A module to add a boolean field to Config Novici',
+    'summary': 'Este es un modulo de prueba para crear tus propias configuraciones',
     'category': 'Tools',
-    'author': 'Your Name',
-    'website': 'http://www.yourwebsite.com',
+    'author': 'Novici',
+    'website': 'https://www.odoo.com/es/partners/novici-12925418',
     'license': 'LGPL-3',
     'depends': ['base'],
     'data': [
