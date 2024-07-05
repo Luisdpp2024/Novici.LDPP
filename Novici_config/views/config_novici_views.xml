@@ -1,0 +1,32 @@
+<!-- Vista form para ConfigNovici -->
+<odoo>
+    <record id="view_config_novici_form" model="ir.ui.view">
+        <field name="name">config.novici.form</field>
+        <field name="model">config.novici</field>
+        <field name="arch" type="xml">
+            <form string="Config Novici" create="false">
+                <sheet>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="is_active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+
+    <record id="action_config_novici_form" model="ir.actions.act_window">
+        <field name="name">Config Novici</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">config.novici</field>
+        <field name="view_mode">form</field>
+        <field name="res_id">1</field>
+        <field name="target">current</field>
+        <field name="context">{'default_res_id': 1}</field>
+    </record>
+
+    <!-- Menú para acceder a Config Novici -->
+    <menuitem id="menu_config_novici" name="Config Novici"/>
+    <menuitem id="menu_config_novici_form" name="Config Novici Form" action="action_config_novici_form" parent="menu_config_novici"/>
+</odoo>

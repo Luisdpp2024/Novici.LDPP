@@ -1,0 +1,6 @@
+<odoo>
+    <record id="novici_config_default" model="config.novici">
+        <field name="name">Default Config Novici</field>
+        <field name="is_active">True</field>
+    </record>
+</odoo>
